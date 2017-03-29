@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apps.edu.mylibros.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        android:onClick="buscarWeb"
+        android:id="@+id/btBuscar" />
+
+    <EditText
+        android:id="@+id/etAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Autor a buscar"
+        android:layout_alignBottom="@+id/btBuscar"
+        android:layout_toRightOf="@+id/btBuscar"
+        android:layout_toEndOf="@+id/btBuscar" />
+
+    <TextView
+        android:text="El texto de salida irá aqui"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSalida"
+        android:layout_below="@+id/btBuscar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+
+  <ListView
+      android:id="@+id/lvSalida"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/tvSalida"
+      android:layout_marginTop="13dp"
+      >
+
+  </ListView>
+</RelativeLayout>
